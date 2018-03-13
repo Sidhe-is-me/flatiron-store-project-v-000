@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>RailsFlatironStore</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -8,7 +9,10 @@
   <%= analytics_init if Rails.env.production? %>
 </head>
 <body>
-
+<!-- YD added -->
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+<!-- YD added -->
 <%= render 'layouts/header' %>
 <%= yield %>
 
